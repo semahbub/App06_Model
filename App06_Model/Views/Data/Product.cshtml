@@ -1,0 +1,19 @@
+﻿@model App06_Model.Models.Product
+@{
+    ViewData["Title"] = "Product";
+}
+
+<h1>Product</h1>
+
+@if (Model != null)
+{
+    <h2 class="alert alert-info">@Model.Id</h2>
+    <h2 class="alert alert-info">@Model.Name</h2>
+    @*<h2 class="alert alert-info">@Model.MUnit</h2>*@
+    <h2 class="alert alert-info">@Model.UnitPrice</h2>
+    <h2 class="alert alert-info">@Model.Quantity</h2>
+}
+else
+{
+    <h2 class="alert alert-info">No Product is Found.</h2>
+}

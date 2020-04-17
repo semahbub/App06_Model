@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="alert alert-info">Index</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="show" method="post">
+            <label>Text</label>
+            <input type="text" name="mytext" class="form-control" value="" />
+            <label>Number of Times</label>
+            <input type="number" name="num" class="form-control" value="" />
+            <br />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

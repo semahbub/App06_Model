@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "show";
+}
+
+<h2 class="alert alert-success">Show My Text</h2>
+
+@if (ViewBag.text != null)
+{
+    for (int i = 0; i < ViewBag.num; i++)
+    {
+        <h3 class="alert alert-warning">@i @ViewBag.text</h3>
+    }
+}
